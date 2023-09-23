@@ -137,7 +137,7 @@ void load_bios(void)
 	}
 	if (!fp)
 	{
-		fprintf(stderr, "%s: Cannot locate bios.bin\n", progname);
+		fprintf(stderr, "%s: Cannot locate %s\n", progname, fname);
 		zxcc_term();
 		zxcc_exit(1);
 	}
